@@ -1,0 +1,6 @@
+def format_line_item(description, amount, tax_rate=7.5, currency="$"):
+    # TODO: calculate the taxed total using tax_rate, round to 2 decimal places,
+    total = round(amount + (amount * tax_rate / 100), 2)
+
+    # and return "{description}: {currency}{total}"
+    return f"{description}: {currency}{total}"
